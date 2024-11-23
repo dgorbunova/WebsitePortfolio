@@ -1,0 +1,10 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, figure, img, article, figcaption, footer, header, a, ul, table, caption, thead, tbody{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-weight:normal;
+}
+
+/* Resetting all the margins, paddings, borders, font-size, vertical-align and font-weight to default values. */

@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <script src="javascript/script2.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="view-post-container">
+        <header id="view-post-header">
+            <div id="name">
+                <h1 class="satisfy-regular">Daria Gorbunova</h1>
+            </div>
+            <div id="navBar">  <!-- Navigation bar -->
+                <ul class="ubuntu-medium">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="experiences.html">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="viewBlog.html">Blog</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Display a welcome message if the user is logged in -->
+        <!-- Display the blog posts -->
+        <table id="posts">
+            <thead>
+                <tr>
+                    <th>Blog Posts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <form id="date-range" method="post"> <!-- Form to select a date range -->
+                            <fieldset>
+                                <legend>Select Date</legend>
+                                <label for="month">Month:</label>
+                                <select id="month" name="month" required>
+                                    <option value="" selected disabled>Select</option>
+                                    <option value="all">Show All Posts</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>                            
+                                <button type="submit" id="submit-date">Search</button>
+                                <script>
+                                    document.getElementById("submit-date").addEventListener("click", function(event) {
+                                      event.preventDefault(); // Prevent the default action (submission)
+                                      console.log("Button clicked but not linked to any action, this is a static website and Blog part is dynamic so it has been removed.");
+                                    });
+                                  </script>
+                            </fieldset>
+                        </form>     
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+       
+
+        <footer id="view-post-footer">
+            <p>Daria Gorbunova 2024 &copy;</p>
+        </footer> 
+
+</body>
+</html>

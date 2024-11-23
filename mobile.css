@@ -1,0 +1,860 @@
+/*===================================*/
+/*=========HEADER STYLING============*/
+/*===================================*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #C0A9BD;
+
+    margin: 0.5em 0.25em;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+
+#name{
+    font-size: 2em;
+    color: white;
+}
+
+#navBar{
+    display: flex;
+    justify-content: center; /* horizontally centers */
+    align-items: center;  /* vertically centers */
+}
+
+#navBar ul{
+    display: flex;
+    justify-content: space-between; /* evenly spaces the links */
+    list-style: none; /* removes bullet points from list */
+    gap: 1em;
+}
+
+#navBar a{
+    text-decoration: none; /*removes underline from links*/
+    color: white;
+    font-size: 0.9em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*===========BODY STYLING============*/
+/*===================================*/
+
+
+body{
+    background-color: #f8f3f3;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*===========FOOTER STYLING==========*/
+/*===================================*/
+
+footer{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    color: white;
+
+    background-color: #C0A9BD;
+
+    margin: 0.5em 0.25em;
+    border-radius: 0.5em;
+    padding: 0.5em 2em;
+    
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*============HOME STYLING===========*/
+/*===================================*/
+
+#home-container{
+    display:grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'header'
+    'title'
+    'footer';
+}
+
+#home-header{
+    grid-area: header;
+}
+
+#home-title{
+    grid-area: title;
+
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 3.5em;
+    text-align: center;
+    color: #6c6b6b;
+    
+    height: auto;
+    margin: 6.4em 0em;
+}
+
+
+#home-footer{
+    grid-area: footer;
+    margin-top: 1.0em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*============TITLE STYLING==========*/
+/*===================================*/
+
+#about-me-title, #experiences-title, #skills-title, #projects-title, #education caption{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align: left;
+    color: #6c6b6b;
+
+    padding-left: 0.5em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*=========ABOUT ME STYLING==========*/
+/*===================================*/
+
+#about-container{
+    display:grid;
+    gap: 0.2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header header'
+    'about-me about-me '
+    'picture contacts'
+    'background background'
+    'interests interests'
+    'footer footer';
+}
+
+#about-me-header{
+    grid-area: header;
+}
+
+#about-me-title{
+    grid-area: about-me;
+}
+
+#about-footer{
+    grid-area: footer;
+    margin-top: 1.7em;
+}
+
+#background{
+    grid-area:background;
+}
+
+#interests{
+    grid-area:interests;
+}
+
+#contacts{
+    grid-area: contacts;
+
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.8em;
+    height: 2em;
+    border: solid 0.2em #C0A9BD;
+    border-radius: 0.5em;
+    margin: auto 3em;
+    
+    padding: 0.5em;
+
+    
+}
+
+
+#background, #interests{
+    display: flex;
+    justify-content: space-between;
+    gap: 0em;
+
+    background-color: #747474;
+    border-radius: 2em;
+    padding: 0.5em;
+    margin:0em 0.25em;
+    
+}
+
+#background h3, #interests h3{
+    display: flex;
+    margin-top:auto;
+    margin-bottom:auto;
+    align-items: center; /* vertically centers */
+    justify-content: center; /* horizontally centers */
+    background-color: #f8f9f6;
+    
+    width: 8em; 
+    height: 7.5em;
+    padding: 0.5em;
+    font-size: 1.3em;
+    border-radius: 2em;
+    border: dashed 0.1em black;
+    
+    
+}
+
+#background p, #interests p{
+    justify-content: center; /* horizontally centers */
+    align-self: center; /* vertically centers */
+    
+    background-color: #f8f9f6;
+    font-size: 0.9em;
+    width: 32em;
+    height: 9em;
+    padding: 2em;
+
+    border: dashed 0.15em black;
+    border-radius: 2em;
+}
+
+#picture{
+    grid-area:picture;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5em;
+    padding: auto;
+}
+
+.styled-profile-picture{
+    width: auto;
+    height: 20em;
+    object-fit: cover; /* makes sure the image covers the entire div */
+    border-radius: 1em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*=========EXPERIENCE STYLING========*/
+/*===================================*/
+
+#experiences-container{
+    display:grid;
+    gap: 0.2em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    'header'
+    'title'
+    'experience1'
+    'experience2'
+    'experience3'
+    'experience4'
+    'footer';
+}
+
+#experiences-title{
+    grid-area: title;
+}
+
+#experiences-header{
+    grid-area: header;
+}
+
+#experience1{
+    grid-area: experience1;
+}
+
+#experience2{
+    grid-area: experience2;
+}
+
+#experience3{
+    grid-area: experience3;
+}
+
+#experience4{
+    grid-area: experience4;
+}
+
+#experiences-footer{
+    grid-area: footer;
+    margin-top: 0.8em;
+}
+
+#experience1, #experience2, #experience3, #experience4{
+    display: flex;
+    justify-content: center; /* horizontally centers */
+    align-items: center; /* vertically centers */
+    
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.8em;
+
+    background-color: #747474;
+    border-radius: 2em;
+
+    padding: 0.1em;
+    margin:0.3em;
+    gap:0.2em;
+    height: 14.5em;
+    width: auto;
+    
+}
+
+.experience-picture{
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+}
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*===========SKILLS STYLING==========*/
+/*===================================*/
+
+#skills-container{
+    display:grid;
+    gap: 0.1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'skills-title'
+    'skills'
+    'footer';
+}
+
+
+#skills-header{
+    grid-area: header;
+}   
+
+#skills-title{
+    grid-area: skills-title;
+}
+
+#skills-footer{
+    grid-area: footer;
+    margin-top: 1.1em;
+}
+
+#skills-display{
+    grid-area: skills;
+    margin: 0.6em 0.25em;
+    display: block;
+    
+}
+
+.skill{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    color: black;
+
+    background-color: #f8f9f6;
+    border: dashed 0.2em black;
+    border-radius: 1em;
+    margin-top: 0.5em;
+    
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+
+}
+
+.skill h4{
+    text-align: center;
+    margin: 0.5em;
+}
+.skill ul li{
+    list-style:circle;
+    text-align: left;
+    margin: 1.1em 1em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*==========EDUCATION STYLING========*/
+/*===================================*/
+
+#education-container{
+    display:grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'header'
+    'education'
+    'footer';
+}
+
+#education-header{
+    grid-area: header;
+}
+
+#education{
+    grid-area: education;
+    margin:2em 0.25em;
+}
+
+#education caption{
+    grid-area: about-me;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    padding-left: 0.5em;
+}
+
+#education-footer{
+    grid-area: footer;
+    margin-top: 3em;
+}
+
+
+#education, .grades{ /*tables*/
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: black;
+    background-color: #747474;
+    border: solid 0.2em black;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+
+#education thead{
+    background-color: #747474;
+    color: white;
+}
+
+#education td{
+    padding: 0.2em;
+    border: solid 0.2em;
+    border-radius: 0.5em;
+    background-color: #f8f9f6;
+    font-size: 1em;
+}
+
+.grades{
+    margin:auto;
+}
+
+.grades td{
+    width: 12em;
+    font-size: 0.8em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*==========PROJECT STYLING==========*/
+/*===================================*/
+
+#project-container{
+    display:grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'title'
+    'project'
+    'picture1'
+    'picture2'
+    'footer';
+}
+
+#project-header{
+    grid-area: header;
+}
+
+#projects-title{
+    grid-area: title;
+}
+
+#project{
+    grid-area: project;
+}
+
+#project-footer{
+    grid-area: footer;
+    margin-top: 1.4em;
+}
+
+#picture1{
+    grid-area: picture1;
+}
+
+#picture2{
+    grid-area: picture2;
+}
+
+#picture1, #picture2{
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+
+#project{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-left: 0.6em;
+}
+
+.project-picture img{
+    width: 30em;
+    height: auto;
+    border-radius: 1em;
+}
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*==========LOGIN STYLING============*/
+/*===================================*/
+
+#blog-container{
+    display:grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'login'
+    'footer';
+}
+
+#blog-header{
+    grid-area: header;
+}
+
+#blog-footer{
+    grid-area: footer;
+    margin-top: 2.0em;
+}
+
+#login{
+    grid-area: login;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15em;
+    margin-bottom: 13.5em;
+}
+
+#login fieldset{
+    background-color: #f8f9f6;
+    padding: 3em;
+    border-radius: 2em;
+    border: dashed 0.2em black;
+    height: auto;
+}
+
+#login legend{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #6c6b6b;
+    text-align: center;
+
+}
+
+.field{
+    margin: 2em 1em;
+}
+
+.field input{
+    display: flex;
+    font-size: 1.2em;
+    width: 10em;
+    align-self: center;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*==========BLOG STYLING=============*/
+/*===================================*/
+
+#view-post-container{
+    display:grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'message'
+    'posts'
+    'back'
+    'footer';
+
+}
+#to-post{
+    grid-area: back;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+#userMessage{
+    grid-area: message;
+    margin-left:0.25em;
+    margin-bottom: 1em;
+}
+
+#view-post-header{
+    grid-area: header;
+}
+
+#view-post-footer{
+    grid-area: footer;
+    margin-top: 6.3em;
+}
+
+
+#posts, #comments{
+    list-style-type: none;
+    grid-area: posts;
+    gap: 1em;
+    margin: 0.5em 0.25em;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: black;
+    overflow-y: auto;
+    width: auto;
+    height: 40em;
+    max-height: 40em;
+    background-color: #747474;
+    border: solid 0.2em black;
+    border-radius: 0.5em;
+}
+
+#posts thead, #comments thead{
+    background-color: #747474;
+    color: white;
+}
+
+#posts td, #comments td{
+    padding: 0.2em;
+    border: solid 0.2em;
+    border-radius: 0.5em;
+    background-color: #f8f9f6;
+    font-size: 1em;
+}
+
+#items{
+    margin: 0.5em;
+    text-align: left;
+    list-style-type: none;
+}
+
+
+
+.entry-date{
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: right;
+    margin-right: 0.25em;
+}
+.title-item{
+    font-weight: bold;
+}
+.text-item{
+    margin-bottom: 0.5em;
+}
+
+.calendar-icon{
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+}
+
+.delete-post, .delete-comment{
+    
+    margin-bottom: 0.1em;
+    color: red;
+    
+}
+
+.delete{
+    
+    text-align: right;
+    padding-bottom: 0.2em;
+}
+
+.comments{
+    text-align: left;
+    padding-bottom: 0.2em;
+}
+
+.list-group-item{
+    border-bottom: solid 0.1em black;
+}
+
+.error {
+    border: 1px solid red;
+    background-color: rgba(250, 96, 96, 0.31);
+}
+
+
+
+button[type="submit"], button[type="reset"] {
+    background-color:grey;
+    color: white; 
+    padding: 1em 2em; 
+    border: none; 
+    border-radius: 0.5em; 
+    cursor: pointer; 
+    width: 10em;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover{
+    background-color: #C0A9BD; 
+}
+
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*==========VIEW COMMENTS STYLING====*/
+/*===================================*/
+
+#view-comments-container{
+    display:grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'message'
+    'comments'
+    'back'
+    'footer';
+}
+
+#view-comments-header{
+    grid-area: header;
+}
+
+#view-comments-footer{
+    grid-area: footer;
+    margin-top: 6.3em;
+}
+
+#comments{
+    grid-area:comments;
+}
+
+input[type="new-comment"]{
+    width: 30em; 
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+#return{
+    grid-area: back;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+
+}
+
+#display-post{
+    height: 3em;
+}
+
+
+
+/*===================================*/
+/*===================================*/
+/*===================================*/
+
+/*===================================*/
+/*==========FONTS STYLING============*/
+/*===================================*/
+
+
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.titillium-web-regular {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+  }
+
+.dancing-script{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 1em;
+    margin: 0;
+}
+  
